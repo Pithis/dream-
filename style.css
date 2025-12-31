@@ -2275,4 +2275,23 @@ footer {
         width: 100%;
         margin-top: 10px;
     }
+
+    /* Fix Contact Section for Mobile */
+    .contact-box {
+        grid-template-columns: 1fr;
+        border-radius: 20px;
+    }
+
+    .contact-text,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .contact-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
 }
