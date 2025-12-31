@@ -2246,3 +2246,33 @@ footer {
 .lazy-load.loaded {
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+
+    /* Fix Testimonials Grid for Mobile */
+    .testimonial-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        padding: 30px;
+    }
+
+    /* Fix Trust Strip for Mobile */
+    .trust-content {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .trust-brands {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        margin-top: 10px;
+    }
+}
