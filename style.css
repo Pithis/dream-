@@ -1389,12 +1389,22 @@ footer {
         width: 100%;
         height: 100vh;
         background: var(--white);
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
+        -webkit-justify-content: center;
         justify-content: center;
+        -webkit-align-items: center;
         align-items: center;
         gap: 30px;
         z-index: 1050;
         padding: 40px;
+    }
+
+    /* Hide nav links by default, show when active */
+    .nav-links-new:not(.active) {
+        display: none;
     }
 
     .nav-links-new a {
@@ -1403,6 +1413,7 @@ footer {
     }
 
     .nav-links-new.active {
+        display: -webkit-flex;
         display: flex;
     }
 
@@ -1433,6 +1444,9 @@ footer {
     }
 
     .hero-content-new {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         gap: 40px;
     }
@@ -1451,8 +1465,12 @@ footer {
         left: 0;
         margin-top: 40px;
         border-radius: 20px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 20px;
+        -webkit-justify-content: center;
         justify-content: center;
     }
 
@@ -1747,8 +1765,10 @@ footer {
 }
 
 .magic-track {
+    display: -webkit-flex;
     display: flex;
     gap: 15px;
+    -webkit-align-items: center;
     align-items: center;
     transform: translateX(0);
     width: max-content;
@@ -1856,8 +1876,10 @@ footer {
 }
 
 .services-track {
+    display: -webkit-flex;
     display: flex;
     gap: 30px;
+    -webkit-align-items: stretch;
     align-items: stretch;
     transition: all 0.5s ease;
 }
@@ -1946,6 +1968,7 @@ footer {
 /* Mobile View for Timed Services */
 @media (max-width: 768px) {
     .services-track {
+        -webkit-flex-direction: column;
         flex-direction: column;
     }
 
